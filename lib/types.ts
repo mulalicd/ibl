@@ -61,6 +61,7 @@ export type PlanCardData = Pick<
   | 'created_at'
   | 'duration_min'
   | 'tier'
+  | 'language'
   | 'inquiry_question'
   | 'is_favourite'
 >;
@@ -163,7 +164,7 @@ export interface ChatMessage {
   id: string; // client-side UUID
   role: MessageRole;
   content: string;
-  timestamp: Date;
+  timestamp: string;
   isPlan?: boolean; // true if content is a generated plan
   plan_id?: string; // populated after auto-save
 }
@@ -175,7 +176,7 @@ export interface ConversationState {
   mode: ChatMode;
   messages: ChatMessage[];
   activePlanId: string | null;
-  activePlan: PlanRecord | null;
+  activePlan: string | null;
   isLoading: boolean;
   error: string | null;
 }
@@ -244,9 +245,9 @@ export interface GeminiResult {
  */
 export interface DashboardFilters {
   subject?: string;
-  grade?: number;
-  language?: Language;
-  tier?: Tier;
+  grade?: number | null;
+  language?: Language | null;
+  tier?: Tier | null;
   isFavourite?: boolean;
   searchQuery?: string;
   sortBy?: 'created_at' | 'updated_at' | 'subject' | 'grade';
