@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link                    from 'next/link';
-import PlanCard                from '@/components/PlanCard';
+import PlanCard                from '@/components/PlanCard'; // PlanCard component
 import { SUBJECTS, TIER_LABELS } from '@/lib/constants';
 import type { PlanCardData, DashboardFilters } from '@/lib/types';
 

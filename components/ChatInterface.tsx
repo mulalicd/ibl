@@ -6,7 +6,7 @@ import { SUBJECTS, SUBJECT_GROUPS }                 from '@/lib/constants';
 import LoadingIndicator                              from './LoadingIndicator';
 import PlanDisplay                                   from './PlanDisplay';
 import GeminiStatusBar                              from './GeminiStatusBar';
-import DocxExportButton                             from './DocxExportButton';
+import DocxExportButton                             from './DocxExportButton'; // DocxExportButton component
 import type {
   ChatMessage, ConversationState, OnboardingState,
   Language, GenerateResponse,
