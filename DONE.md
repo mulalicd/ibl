@@ -81,6 +81,13 @@
 #### Step 26: Dashboard Page
 - ✅ app/dashboard/page.tsx — plan management dashboard
 
+#### Step 27: Plan Detail Page
+- ✅ app/plan/[id]/page.tsx — single plan view with actions
+
+#### Step 28: Full UI Components
+- ✅ components/PlanCard.tsx — full dashboard card component
+- ✅ components/DocxExportButton.tsx — full export button with states
+
 ### Verification Status
 - ✅ PSI character count: 63,119 (complete)
 - ✅ TypeScript compilation: 0 errors
